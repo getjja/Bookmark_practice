@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Confirm Delete{% endblock %}
+{% block content %}
+    <form action="" method="post">
+        {%csrf_token%}
+        <div class="aler alert-danger">Do you want to delete BookMark"{{object}}?"</div>
+        <input type="submit" value="delete" class="btn btn-danger">
+    </form>
+{% endblock %}
